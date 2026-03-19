@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Web cua Ho Nhi Khang</title>
+    <meta charset="UTF-8">
+    <title>Profile SV</title>
     <style>
-        body { margin: 0; font-family: Arial; }
-
-        /* menu */
-        nav {
-            background: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            color: yellow;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
         }
 
-        /* nội dung */
-        .content {
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            border: 3px solid red;
+            padding: 40px;
             text-align: center;
-            padding: 50px;
-            background: lightblue;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: red;
+        }
+
+        .profile {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .profile span {
+            color: red;
+            font-weight: bold;
+        }
+
+        .info {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .line {
+            margin-top: 20px;
+            letter-spacing: 5px;
         }
     </style>
 </head>
 <body>
 
-    <!-- MENU -->
-    <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Giới thiệu</a>
-        <a href="#">Liên hệ</a>
-    </nav>
+<div class="container">
+    <h1>
+        WELCOME TO <span class="highlight">HỒ NHĨ KHANG</span>
+    </h1>
 
-    <!-- CONTENT -->
-    <div class="content">
-        <h1>Hello 👋</h1>
-        <p>Web có menu rồi 😎</p>
-        <button onclick="alert('Hello bạn!')">Click</button>
+    <div class="profile">
+        <span>Profile:</span> thông tin cá nhân + ảnh
     </div>
+
+    <div class="info">
+        <p><b>MSSV:</b> 2474802016938</p>
+        <p><b>Ngày sinh:</b> 14/05/2006</p>
+    </div>
+
+    <div class="line">
+        -------------------------
+    </div>
+</div>
 
 </body>
 </html>
